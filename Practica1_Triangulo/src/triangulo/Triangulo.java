@@ -9,7 +9,7 @@ public class Triangulo {
 	public Triangulo(int p,int q,int r) {
 		 
 		boolean valido = r < p+q && q < p+r && p< q+r ;
-		boolean ladosPositivos = p >= 0 && q >= 0 && r>=0;
+		boolean ladosPositivos = p > 0 && q > 0 && r > 0;
 		
 		if(!valido || !ladosPositivos) {
 			throw new RuntimeException();

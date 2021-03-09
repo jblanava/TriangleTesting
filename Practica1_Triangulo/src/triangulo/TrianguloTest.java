@@ -6,9 +6,9 @@ import org.junit.Test;
 
 public class TrianguloTest {
 
-	@Test
-	public void test() {
-		fail("Not yet implemented");
+	@Test (expected= RuntimeException.class) 
+	public void tresLadosConLongitud0() {
+		Triangulo t = new Triangulo(2, 1, 0);
 	}
 
 }
